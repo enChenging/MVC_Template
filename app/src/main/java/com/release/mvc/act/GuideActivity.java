@@ -12,6 +12,7 @@ import com.release.mvc.adapter.GuideViewPagerAdapter;
 import com.release.mvc.base.BaseActivity;
 import com.release.mvc.utils.DensityUtil;
 import com.release.mvc.utils.LogUtils;
+import com.release.mvc.utils.StatusBarUtil;
 import com.release.mvc.view.pageTransformer.CubeOutTransformer;
 
 import java.util.ArrayList;
@@ -106,7 +107,7 @@ public class GuideActivity extends BaseActivity {
             if (i != 0) {
                 params.leftMargin = DensityUtil.dip2px(getApplicationContext(), 10);
             }
-            view.setBackgroundResource(R.mipmap.dot_normal);
+            view.setBackgroundResource(R.drawable.ic_dots_blue);
             view.setLayoutParams(params);
             mDotGroup.addView(view);
         }
@@ -117,6 +118,10 @@ public class GuideActivity extends BaseActivity {
 //        viewpager.setPageTransformer(true, new RotatePageTransformer());
         mViewViewpager.setPageTransformer(true, new CubeOutTransformer());
 
+    }
 
+    @Override
+    protected void setStatusBar() {
+        StatusBarUtil.setTransparentForImageViewInFragment(this, null);
     }
 }

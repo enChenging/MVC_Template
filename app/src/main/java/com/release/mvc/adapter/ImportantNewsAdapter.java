@@ -6,10 +6,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.release.mvc.R;
 import com.release.mvc.base.MyBaseAdapter;
 import com.release.mvc.bean.ImprotantNewsBean;
-import com.release.mvc.utils.GlideApp;
 
 import java.util.List;
 
@@ -40,7 +40,7 @@ public class ImportantNewsAdapter extends MyBaseAdapter<ImprotantNewsBean.DataBe
         }
 
         ImprotantNewsBean.DataBean dataBean = mDatas.get(position);
-        GlideApp.with(mContext).load(dataBean.getPic()).optionalCenterCrop().into(holder.iv_bg);
+        Glide.with(mContext).load(dataBean.getPic()).optionalCenterCrop().into(holder.iv_bg);
         holder.tv_title.setText(dataBean.getTitle());
         holder.tv_content.setText(dataBean.getFood_str());
         holder.tv_zan.setText("点赞" + dataBean.getNum() + "人");

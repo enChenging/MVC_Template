@@ -29,10 +29,6 @@ public abstract class BaseActivity extends RxAppCompatActivity implements View.O
 
         setContentView(getLayoutId());
 
-        initTheme();
-
-        ButterKnife.bind(this);
-
         initView();
 
         initCommonView();
@@ -43,20 +39,15 @@ public abstract class BaseActivity extends RxAppCompatActivity implements View.O
 
     }
 
-    protected void initTheme() {
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+    @Override
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
+        ButterKnife.bind(this);
+        setStatusBar();
+    }
 
-        StatusBarUtil.setTranslucentStatus(this);
-        if (this instanceof SplashActivity) {
-            StatusBarUtil.setRootViewFitsSystemWindows(this, true);
-            StatusBarUtil.setStatusBarDarkTheme(this, false);
-        } else if (this instanceof GuideActivity) {
-            StatusBarUtil.setRootViewFitsSystemWindows(this, false);
-            StatusBarUtil.setStatusBarDarkTheme(this, false);
-        } else {
-            StatusBarUtil.setRootViewFitsSystemWindows(this, true);
-            StatusBarUtil.setStatusBarDarkTheme(this, true);
-        }
+    protected void setStatusBar() {
+        StatusBarUtil.setColorNoTranslucent(this, getResources().getColor(R.color.colorPrimary));
     }
 
 

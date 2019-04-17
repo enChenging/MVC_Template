@@ -14,7 +14,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_centerVertical="true"
-        android:src="@mipmap/ic_image_setting" />
+        android:src="@drawable/ic_person" />
 
     <ImageView
         android:id="@+id/iv_search"

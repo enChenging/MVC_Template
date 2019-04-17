@@ -13,6 +13,7 @@ import com.release.mvc.base.Constants;
 import com.release.mvc.utils.AppManager;
 import com.release.mvc.utils.InstallUtil;
 import com.release.mvc.utils.SPUtil;
+import com.release.mvc.utils.StatusBarUtil;
 import com.release.mvc.view.dialog.NoticeDialog;
 
 import java.util.concurrent.TimeUnit;
@@ -244,4 +245,8 @@ public class SplashActivity extends BaseActivity {
         NoticeDialog.show(this, getResources().getString(R.string.rationale_ask_again), noticeListener);
     }
 
+    @Override
+    protected void setStatusBar() {
+        StatusBarUtil.setTransparent(this);
+    }
 }

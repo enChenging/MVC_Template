@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.release.mvc.R;
 import com.release.mvc.adapter.HomePagesAdapder;
 import com.release.mvc.base.BaseActivity;
@@ -19,7 +20,7 @@ import com.release.mvc.page.LivePage;
 import com.release.mvc.page.NewsPage;
 import com.release.mvc.page.RecommendPage;
 import com.release.mvc.utils.AppManager;
-import com.release.mvc.utils.GlideApp;
+import com.release.mvc.utils.StatusBarUtil;
 import com.release.mvc.view.LazyViewPager;
 import com.release.mvc.view.NoScrollViewPager;
 
@@ -79,7 +80,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initView() {
-        GlideApp.with(this).load("https://b-ssl.duitang.com/uploads/item/201802/20/20180220170028_JcYMU.jpeg").circleCrop().into(mHeadImg);
+        Glide.with(this).load("https://b-ssl.duitang.com/uploads/item/201802/20/20180220170028_JcYMU.jpeg").circleCrop().into(mHeadImg);
     }
 
     @Override
@@ -222,6 +223,11 @@ public class MainActivity extends BaseActivity {
                         isExit = false;
                     }
                 });
+    }
+
+    @Override
+    protected void setStatusBar() {
+        StatusBarUtil.setColorForDrawerLayout(this, mDlDrawer, getResources().getColor(R.color.colorPrimary), 0);
     }
 
 }

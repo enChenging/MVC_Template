@@ -5,10 +5,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.release.mvc.R;
 import com.release.mvc.base.MyBaseAdapter;
 import com.release.mvc.bean.OfficalEventBean;
-import com.release.mvc.utils.GlideApp;
 
 import java.util.List;
 
@@ -36,7 +36,7 @@ public class TechnologyFragmentAdapter extends MyBaseAdapter<OfficalEventBean.Da
             holder = (ViewHolder) convertView.getTag();
         }
 
-        GlideApp.with(mContext).load(mDatas.get(position).getPath()).into(holder.iv);
+        Glide.with(mContext).load(mDatas.get(position).getPath()).into(holder.iv);
 
         return convertView;
     }
