@@ -1,7 +1,5 @@
 package com.release.mvc.http;
 
-import okhttp3.Call;
-
 /**
  * @author Mr.release
  * @create 2019/3/29
@@ -10,7 +8,7 @@ import okhttp3.Call;
 public interface  ICallBack {
 
 
-    void onFailure(Call call, Exception e);
+    void onFailure(String throwable);
 
     void onSuccess(String response);
 }

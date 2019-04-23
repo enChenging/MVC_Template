@@ -4,58 +4,67 @@ import java.util.List;
 
 /**
  * @author Mr.release
- * @create 2019/3/26
+ * @create 2019/4/23
  * @Describe
  */
 public class ImprotantNewsBean {
 
+
     /**
-     * ret : 1
-     * data : [{"id":"8289","title":"油焖大虾","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/9/8289.jpg","collect_num":"1667","food_str":"大虾 葱 生姜 植物油 料酒","num":1667},{"id":"2127","title":"四川回锅肉","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/3/2127.jpg","collect_num":"1590","food_str":"猪肉 青蒜 青椒 红椒 姜片","num":1590},{"id":"30630","title":"超简单芒果布丁","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/31/30630.jpg","collect_num":"1538","food_str":"QQ糖 牛奶 芒果","num":1538},{"id":"9073","title":"家常红烧鱼","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/10/9073.jpg","collect_num":"1424","food_str":"鲜鱼 姜 葱 蒜 花椒","num":1424},{"id":"10097","title":"家常煎豆腐","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/11/10097.jpg","collect_num":"1417","food_str":"豆腐 新鲜红椒 青椒 葱花 油","num":1417},{"id":"10509","title":"水煮肉片","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/11/10509.jpg","collect_num":"1339","food_str":"瘦猪肉 生菜 豆瓣酱 干辣椒 花椒","num":1339},{"id":"46968","title":"红糖苹果银耳汤","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/47/46968.jpg","collect_num":"1252","food_str":"银耳 苹果 红糖","num":1252},{"id":"10191","title":"麻婆豆腐","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/11/10191.jpg","collect_num":"1220","food_str":"豆腐 肉末 生抽 白糖 芝麻油","num":1220},{"id":"2372","title":"皮蛋瘦肉粥","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/3/2372.jpg","collect_num":"1151","food_str":"大米 皮蛋 猪肉 油条 香葱","num":1151},{"id":"2166","title":"蚂蚁上树","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/3/2166.jpg","collect_num":"1143","food_str":"红薯粉 肉 姜 蒜 花椒","num":1143},{"id":"2262","title":"糖醋肉","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/3/2262.jpg","collect_num":"1077","food_str":"猪肉 红椒 黄椒 洋葱 蛋清","num":1077},{"id":"9971","title":"鱼香豆腐","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/10/9971.jpg","collect_num":"1009","food_str":"豆腐 木耳 胡萝卜 香葱 番茄酱","num":1009},{"id":"10172","title":"干煸四季豆","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/11/10172.jpg","collect_num":"991","food_str":"四季豆 干辣椒 蒜头 酱油 糖","num":991},{"id":"2685","title":"胡萝卜肉末蒸蛋","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/3/2685.jpg","collect_num":"926","food_str":"胡萝卜 肉 蛋 生抽 盐","num":926},{"id":"9972","title":"虎皮青椒","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/10/9972.jpg","collect_num":"891","food_str":"青辣椒 大蒜 香醋 白糖 生抽","num":891},{"id":"10437","title":"叉烧排骨","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/11/10437.jpg","collect_num":"801","food_str":"排骨 李锦记叉烧酱 植物油 清水 油菜","num":801},{"id":"2892","title":"\u201c五行\u201d彩蔬汤","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/3/2892.jpg","collect_num":"760","food_str":"黑木耳 玉米 牛蒡 胡萝卜 西兰花","num":760},{"id":"33783","title":"美人豆浆","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/34/33783.jpg","collect_num":"757","food_str":"黄豆 红豆 绿豆 黑豆 黑米","num":757},{"id":"2348","title":"麻辣肉丝面","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/3/2348.jpg","collect_num":"756","food_str":"面条 肉丝 淀粉 酱油 辣椒","num":756},{"id":"10044","title":"土豆炖翅根","pic":"http://www.qubaobei.com/ios/cf/uploadfile/132/11/10044.jpg","collect_num":"754","food_str":"土豆 翅根 葱 姜 料酒","num":754}]
+     * code : 200
+     * msg : success
+     * newslist : [{"ctime":"2019-04-23 13:20","title":"微软日本公司宣布今年8月每周休三天 并发放补助","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/23/1ec7cc26d084402196be1d884e293110.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0423/13/EDEUJ4U100097U7T.html"},{"ctime":"2019-04-23 08:43","title":"特斯拉发布自动驾驶定制芯片：称比英伟达好太多","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/23/4e6adc5252de4acb80cf7a5d066cc63a.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0423/08/EDEEO34300097U7T.html"},{"ctime":"2019-04-23 08:35","title":"苹果成亚马逊AWS大客户：一个月要花3000万美元","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/23/fc5cd91d411846a09dc0c4d094bfb030.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0423/08/EDEEA0L600097U7T.html"},{"ctime":"2019-04-23 08:32","title":"要与英伟达分手？马斯克称特斯拉有最好芯片","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/23/372676c70b24484ab7b4baa6d915706b.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0423/08/EDEE3GGG00097U7T.html"},{"ctime":"2019-04-23 08:22","title":"马斯克：明年将有百万辆特斯拉自动驾驶出租车上","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/23/8d38c0f46f5c47de9a4e34c03a73e59e.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0423/08/EDEDH89H00097U7T.html"},{"ctime":"2019-04-22 22:51","title":"Q1或落后华为三分之一 降价的iPhone销量继续下","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/22/0a80cb7e282641ee8338f8cb2b02dcdc.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0422/22/EDDCRHHU00097U7T.html"},{"ctime":"2019-04-22 17:14","title":"爆燃特斯拉车主现身:未私接电线/事发时未充电","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/22/8eb8ff9f6eec4c558edad942b66f2008.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0422/17/EDCPI4ER00097U7T.html"},{"ctime":"2019-04-22 15:48","title":"蔚来ES8维修时着火 官方回应：已开启调查","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/22/c9073f509be645a68a8d4c9206617cac.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0422/15/EDCKLHJ300097U7T.html"},{"ctime":"2019-04-22 15:45","title":"国科微与龙芯合作 发布首款全国产固态硬盘控制","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/22/1ce77851095c425fa16c9a81ccac455f.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0422/15/EDCKG6S600097U7T.html"},{"ctime":"2019-04-22 07:36","title":"特斯拉在地库中突然自燃 公司回应：正核实情况","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/22/29d223001daf4ce4951229903ceb3bea.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0422/07/EDBOG97M00097U7T.html"},{"ctime":"2019-04-21 16:19","title":"命途多舛 三星折叠屏手机临时取消中国区发布会","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/389ca12b5f3f484387b7424ffc2b57c1.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/16/EDA41MTP00097U7T.html"},{"ctime":"2019-04-21 15:27","title":"三星折叠屏手机遭遇滑铁卢 或严重伤害消费者兴","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/a8e5bf6aad404e1c9dbba95953f0731e.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/15/EDA12DVV00097U7T.html"},{"ctime":"2019-04-21 14:30","title":"索尼高桥洋：不会放弃手机业务 但业务复兴还要","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/a4e4479ea6394716b78623680e8481d9.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/14/ED9TPELP00097U7T.html"},{"ctime":"2019-04-21 14:23","title":"外媒：因屏幕问题三星Galaxy Fold首销或推迟","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/db2e6a8e28014acbbf4f632d32af111c.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/14/ED9TD5T500097U7T.html"},{"ctime":"2019-04-21 13:55","title":"民法典新草案有规定:AI换脸一时爽 侵权违法太酸","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/155fb15afe034cd0aad8d2849d9b4e4d.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/13/ED9ROURK00097U7T.html"},{"ctime":"2019-04-21 12:54","title":"特斯拉Roadster 2惊人加速视频放出：1.9秒破百","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/5dc26c2dd5bb4b388e400d25c35335b0.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/12/ED9OATUH00097U7T.html"},{"ctime":"2019-04-21 11:12","title":"支持996?郭台铭:如果我孩子睡到自然醒 就打断他","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/c2de1aa427964b8db7bd10b4edea8f78.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/11/ED9IFJTO00097U7T.html"},{"ctime":"2019-04-21 10:53","title":"SpaceX载人龙飞船测试出现异常，现场升起棕色烟","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/9ee7e48be7ef4a1cac7f7271e1304d4e.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/10/ED9HBQON00097U7T.html"},{"ctime":"2019-04-21 10:49","title":"疑似苹果2019款iPhone模具曝光，三角形三摄稳了","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/c6ab134df8934ec4bfc18e0a3e698264.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/10/ED9H4TAL00097U7T.html"},{"ctime":"2019-04-21 09:21","title":"苹果再次输掉跟Swatch官司:因为one more thing","description":"网易IT","picUrl":"http://cms-bucket.ws.126.net/2019/04/21/b67c789dab044431be7b9f28ac06316b.png?imageView&thumbnail=200y140","url":"https://tech.163.com/19/0421/09/ED9C4NRS00097U7T.html"}]
      */
 
-    private int ret;
-    private List<DataBean> data;
+    private int code;
+    private String msg;
+    private List<NewslistBean> newslist;
 
-    public int getRet() {
-        return ret;
+    public int getCode() {
+        return code;
     }
 
-    public void setRet(int ret) {
-        this.ret = ret;
+    public void setCode(int code) {
+        this.code = code;
     }
 
-    public List<DataBean> getData() {
-        return data;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setData(List<DataBean> data) {
-        this.data = data;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
-    public static class DataBean {
+    public List<NewslistBean> getNewslist() {
+        return newslist;
+    }
+
+    public void setNewslist(List<NewslistBean> newslist) {
+        this.newslist = newslist;
+    }
+
+    public static class NewslistBean {
         /**
-         * id : 8289
-         * title : 油焖大虾
-         * pic : http://www.qubaobei.com/ios/cf/uploadfile/132/9/8289.jpg
-         * collect_num : 1667
-         * food_str : 大虾 葱 生姜 植物油 料酒
-         * num : 1667
+         * ctime : 2019-04-23 13:20
+         * title : 微软日本公司宣布今年8月每周休三天 并发放补助
+         * description : 网易IT
+         * picUrl : http://cms-bucket.ws.126.net/2019/04/23/1ec7cc26d084402196be1d884e293110.png?imageView&thumbnail=200y140
+         * url : https://tech.163.com/19/0423/13/EDEUJ4U100097U7T.html
          */
 
-        private String id;
+        private String ctime;
         private String title;
-        private String pic;
-        private String collect_num;
-        private String food_str;
-        private int num;
+        private String description;
+        private String picUrl;
+        private String url;
 
-        public String getId() {
-            return id;
+        public String getCtime() {
+            return ctime;
         }
 
-        public void setId(String id) {
-            this.id = id;
+        public void setCtime(String ctime) {
+            this.ctime = ctime;
         }
 
         public String getTitle() {
@@ -66,36 +75,28 @@ public class ImprotantNewsBean {
             this.title = title;
         }
 
-        public String getPic() {
-            return pic;
+        public String getDescription() {
+            return description;
         }
 
-        public void setPic(String pic) {
-            this.pic = pic;
+        public void setDescription(String description) {
+            this.description = description;
         }
 
-        public String getCollect_num() {
-            return collect_num;
+        public String getPicUrl() {
+            return picUrl;
         }
 
-        public void setCollect_num(String collect_num) {
-            this.collect_num = collect_num;
+        public void setPicUrl(String picUrl) {
+            this.picUrl = picUrl;
         }
 
-        public String getFood_str() {
-            return food_str;
+        public String getUrl() {
+            return url;
         }
 
-        public void setFood_str(String food_str) {
-            this.food_str = food_str;
-        }
-
-        public int getNum() {
-            return num;
-        }
-
-        public void setNum(int num) {
-            this.num = num;
+        public void setUrl(String url) {
+            this.url = url;
         }
     }
 }

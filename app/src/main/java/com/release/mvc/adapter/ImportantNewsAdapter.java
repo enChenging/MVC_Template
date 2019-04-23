@@ -21,9 +21,9 @@ import butterknife.ButterKnife;
  * @create 2019/3/22
  * @Describe
  */
-public class ImportantNewsAdapter extends MyBaseAdapter<ImprotantNewsBean.DataBean> {
+public class ImportantNewsAdapter extends MyBaseAdapter<ImprotantNewsBean.NewslistBean> {
 
-    public ImportantNewsAdapter(Context context, List<ImprotantNewsBean.DataBean> datas) {
+    public ImportantNewsAdapter(Context context, List<ImprotantNewsBean.NewslistBean> datas) {
         super(context, datas);
 
     }
@@ -39,24 +39,21 @@ public class ImportantNewsAdapter extends MyBaseAdapter<ImprotantNewsBean.DataBe
             holder = (ViewHolder) view.getTag();
         }
 
-        ImprotantNewsBean.DataBean dataBean = mDatas.get(position);
-        Glide.with(mContext).load(dataBean.getPic()).optionalCenterCrop().into(holder.iv_bg);
-        holder.tv_title.setText(dataBean.getTitle());
-        holder.tv_content.setText(dataBean.getFood_str());
-        holder.tv_zan.setText("点赞" + dataBean.getNum() + "人");
+        ImprotantNewsBean.NewslistBean bean = mDatas.get(position);
+        Glide.with(mContext).load(bean.getPicUrl()).optionalCenterCrop().into(holder.iv_tuijian);
+        holder.tv_tuijian_title.setText(bean.getTitle());
+        holder.tv_tuijian_time.setText(bean.getCtime());
 
         return view;
     }
 
     static class ViewHolder {
-        @BindView(R.id.iv_bg)
-        ImageView iv_bg;
-        @BindView(R.id.tv_title)
-        TextView tv_title;
-        @BindView(R.id.tv_content)
-        TextView tv_content;
-        @BindView(R.id.tv_zan)
-        TextView tv_zan;
+        @BindView(R.id.iv_tuijian)
+        ImageView iv_tuijian;
+        @BindView(R.id.tv_tuijian_title)
+        TextView tv_tuijian_title;
+        @BindView(R.id.tv_tuijian_time)
+        TextView tv_tuijian_time;
 
         public ViewHolder(View view) {
             ButterKnife.bind(this, view);
