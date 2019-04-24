@@ -248,5 +248,6 @@ public class SplashActivity extends BaseActivity {
     @Override
     protected void setStatusBar() {
         StatusBarUtil.setTransparent(this);
+//        StatusBarUtil.setLightMode(this);
     }
 }
