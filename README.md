@@ -3,7 +3,9 @@ MVC_Template
 
 [MVC_Template](https://github.com/enChenging/MVC_Template)示例用于解释如何在我们的Android应用程序中使用MVC模式。项目代码整体干净，此项目可以用来学习MVC架构。
 
-    ![image](https://github.com/SelfZhangTQ/T-MVVM/raw/master/screenshots/1_video.gif)
+![image](https://github.com/enChenging/MVC_Template/blob/master/src/mvc2.png)
+![image](https://github.com/enChenging/MVC_Template/blob/master/src/mvc.jpg)
+
 用到的第三方库
 -
 
