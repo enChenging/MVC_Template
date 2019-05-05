@@ -3,13 +3,14 @@ MVC_Template
 
 [MVC_Template](https://github.com/enChenging/MVC_Template)示例用于解释如何在我们的Android应用程序中使用MVC模式。项目代码整体干净，此项目可以用来学习MVC架构。
 
+    ![image](https://github.com/SelfZhangTQ/T-MVVM/raw/master/screenshots/1_video.gif)
 用到的第三方库
 -
 
 - [PermissionsDispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)
 	：Android 6.0中处理运行时权限检测
 - [glide](https://github.com/bumptech/glide)
-	：Google出品的图片加载库， 
+	：Google出品的图片加载库，
 [glide官方文档](https://mrfu.me/2016/02/27/Glide_Getting_Started/)
 - [butterknife](https://github.com/JakeWharton/butterknife)
 	：Android控件依赖注入
