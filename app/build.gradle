@@ -12,6 +12,8 @@ android {
         versionCode rootProject.ext.android["versionCode"]
         versionName rootProject.ext.android["versionName"]
 
+        flavorDimensions "versionCode"
+
         javaCompileOptions {
             annotationProcessorOptions {
                 includeCompileClasspath true
@@ -20,6 +22,22 @@ android {
 
         multiDexEnabled true
     }
+
+    signingConfigs {
+        debug {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('mr_release.jks')
+            storePassword 'android'
+        }
+        release {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('mr_release.jks')
+            storePassword 'android'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -31,6 +49,32 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    productFlavors {
+        mvc {
+            applicationId "com.release.mvc"
+            resValue "string", "name", "mvc"
+            manifestPlaceholders = [app_icon     : "@mipmap/ic_launcher2",
+                                    app_roundicon: "@mipmap/ic_launcher2"]
+        }
+    }
+
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                outputFileName = "${productFlavors[0].name}_v${defaultConfig.versionName}_${buildType.name}_${releaseTime()}.apk"
+            }
+    }
+}
+
+static def releaseTime() {
+    return new Date().format("yyMMdd", TimeZone.getTimeZone("UTC"))
 }
 
 dependencies {
