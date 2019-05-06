@@ -58,7 +58,7 @@ android {
     productFlavors {
         mvc {
             applicationId "com.release.mvc"
-            resValue "string", "name", "mvc"
+            resValue "string", "appName", "MVC_Template"
             manifestPlaceholders = [app_icon     : "@mipmap/ic_launcher2",
                                     app_roundicon: "@mipmap/ic_launcher2"]
         }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MVC_Template</string>
+    <string name="app_name">@string/appName</string>
 
     <string name="open">open</string>
     <string name="close">close</string>
