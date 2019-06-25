@@ -111,7 +111,6 @@ public class GuideActivity extends BaseActivity {
             view.setLayoutParams(params);
             mDotGroup.addView(view);
         }
-
         mViewViewpager.setAdapter(new GuideViewPagerAdapter(imageList));
 //        viewpager.setPageTransformer(true, new ZoomOutPageTransformer());
 //        viewpager.setPageTransformer(true, new DepthPageTransformer());
