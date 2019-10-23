@@ -1,12 +1,9 @@
 package com.release.mvc.base;
 
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 
 import com.release.mvc.R;
-import com.release.mvc.act.GuideActivity;
-import com.release.mvc.act.SplashActivity;
 import com.release.mvc.utils.StatusBarUtil;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
