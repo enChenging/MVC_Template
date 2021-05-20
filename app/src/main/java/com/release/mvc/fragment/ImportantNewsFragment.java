@@ -68,6 +68,7 @@ public class ImportantNewsFragment extends BaseFragment {
             @Override
             public void onSuccess(ImprotantNewsBean improtantNewsBean) {
                 List<ImprotantNewsBean.NewslistBean> newslist = improtantNewsBean.getNewslist();
+                if (newslist != null)
                 list.addAll(newslist);
                 mAdapter.notifyDataSetChanged();
             }
